@@ -13,7 +13,7 @@ import numpy as np
 #import random as rnd
 import warnings as w
 w.filterwarnings('ignore')
-data = pd.read_csv("E:\\bukc\\6th Sem\\Artificial Intelligence\\Labs\\AI Project\\AI-Data.csv")
+data = pd.read_csv("/AI-Data.csv")
 ch = 0
 while(ch != 10):
     print("1.Marks Class Count Graph\t2.Marks Class Semester-wise Graph\n3.Marks Class Gender-wise Graph\t4.Marks Class Nationality-wise Graph\n5.Marks Class Grade-wise Graph\t6.Marks Class Section-wise Graph\n7.Marks Class Topic-wise Graph\t8.Marks Class Stage-wise Graph\n9.Marks Class Absent Days-wise\t10.No Graph\n")
@@ -195,13 +195,6 @@ if(choice.lower()=="y"):
        gen = 0
     nat = input("Enter Nationality: ")
     pob = input("Place of Birth: ")
-    sta = input("Enter Stage ID(Lower level, Middle school, High school): ")
-    if (sta == "Lower level"):
-        sta = 2
-    elif(sta == "Middle school"):
-        sta = 1
-    elif (sta == "High school"):
-        sta = 0
     gra = input("Grade ID as (G-<grade>): ")
     if(gra == "G-02"):
         gra = 2
