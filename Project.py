@@ -13,7 +13,13 @@ import numpy as np
 #import random as rnd
 import warnings as w
 w.filterwarnings('ignore')
-data = pd.read_csv("/AI-Data.csv")
+data = pd.read_csv("AI-Data.csv")
+# ---- NEW FEATURE: Correlation Heatmap ----
+plt.figure(figsize=(12, 8))
+sb.heatmap(data.corr(numeric_only=True), annot=True, cmap="coolwarm")
+plt.title("Correlation Heatmap")
+plt.show()
+# -----------------------------------------
 ch = 0
 while(ch != 10):
     print("1.Marks Class Count Graph\t2.Marks Class Semester-wise Graph\n3.Marks Class Gender-wise Graph\t4.Marks Class Nationality-wise Graph\n5.Marks Class Grade-wise Graph\t6.Marks Class Section-wise Graph\n7.Marks Class Topic-wise Graph\t8.Marks Class Stage-wise Graph\n9.Marks Class Absent Days-wise\t10.No Graph\n")
