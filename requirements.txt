@@ -3,5 +3,6 @@ seaborn
 matplotlib
 scikit-learn
 numpy
+joblib
 
 #to run: pip install -r requirements.txt
