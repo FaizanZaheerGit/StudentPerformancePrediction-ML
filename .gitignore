@@ -3,8 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+models/
+data/processed/
 # C extensions
 *.so
+venv/
+.venv/
 
 # Distribution / packaging
 .Python
